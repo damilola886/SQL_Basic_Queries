@@ -1,0 +1,8 @@
+CREATE TABLE account(
+id INT(11) AUTO_INCREMENT NOT NULL, 
+user_id INT(11) NOT NULL,
+account_number VARCHAR(11) NOT NULL,
+balance DECIMAL(38,2) NOT NULL,
+PRIMARY KEY (id),
+FOREIGN KEY(user_id) REFERENCES users(id)
+);
